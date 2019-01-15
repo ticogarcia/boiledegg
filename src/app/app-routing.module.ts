@@ -8,6 +8,10 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomeModule'
   },
   {
+    path: 'landing',
+    loadChildren: './landing/landing.module#LandingModule'
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
