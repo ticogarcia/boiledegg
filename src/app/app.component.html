@@ -2,11 +2,24 @@
     <!--<h1 class="display-1">Oof</h1>-->
 <!--</div>-->
 <mat-toolbar color="primary">
-    <span class="display-1">Boiled Egg</span>
+    <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <button mat-button class="display-1" routerLink="/">
+        <span>Boiled Egg</span>
+    </button>
     <span class="spacer"></span>
     <button mat-button style="font-size: 2rem; padding: 0; min-width: 0;">
         <i class="fab fa-instagram"></i>
     </button>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav #sidenav mode="side" [opened]="!mobileUser">
+        <p>Test</p>
+    </mat-sidenav>
 
+    <mat-sidenav-content>
+        <h1>Test</h1>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
