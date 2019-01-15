@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   constructor(private mobileService: MobileService) {}
 
   ngOnInit(): void {
-    this.mobileService.getMobile().subscribe(result => {
+    this.mobileService.isMobile().subscribe(result => {
       this.mobileUser = result;
     });
   }
