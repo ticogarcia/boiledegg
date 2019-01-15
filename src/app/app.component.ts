@@ -1,6 +1,7 @@
 import {  Component, OnInit} from '@angular/core';
 import 'hammerjs';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
+import { MobileService } from './shared/mobile/mobile.service';
 
 @Component({
   selector: 'app-root',
@@ -11,15 +12,11 @@ export class AppComponent implements OnInit {
 
   public mobileUser: boolean;
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
-
-  sizeChanges = this.breakpointObserver.observe([
-    Breakpoints.Handset
-  ]);
+  constructor(private mobileService: MobileService) {}
 
   ngOnInit(): void {
-    this.sizeChanges.subscribe(result => {
-      this.mobileUser = result.matches;
+    this.mobileService.getMobile().subscribe(result => {
+      this.mobileUser = result;
     });
   }
 }

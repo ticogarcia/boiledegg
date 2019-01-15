@@ -4,16 +4,17 @@ import { PageNotFoundComponent } from './shared/error/page-not-found/page-not-fo
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: './home/home.module#HomeModule'
-  },
-  {
     path: 'landing',
     loadChildren: './landing/landing.module#LandingModule'
   },
   {
+    path: 'home',
+    loadChildren: './home/home.module#HomeModule'
+  },
+
+  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'landing',
     pathMatch: 'full'
   },
   {

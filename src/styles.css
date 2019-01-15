@@ -6,6 +6,6 @@ body {
 }
 
 .content {
-    padding: 2%;
+    /*padding: 2%;*/
     min-height: 90vh;
 }
