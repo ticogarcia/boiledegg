@@ -13,13 +13,20 @@
         <i class="fab fa-instagram"></i>
     </button>
 </mat-toolbar>
-<mat-sidenav-container class="example-sidenav-container">
-    <mat-sidenav #sidenav mode="side" [opened]="!mobileUser">
-        <p>Test</p>
+<mat-sidenav-container class="mat-app-background">
+    <mat-sidenav #sidenav mode="over" [opened]="!mobileUser">
+        <mat-list>
+            <h3 mat-subheader>Main Menu</h3>
+            <mat-list-item>
+                <mat-icon mat-list-icon>home</mat-icon>
+                <h4 mat-line>Home</h4>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <h3 mat-subheader>Subheader</h3>
+        </mat-list>
     </mat-sidenav>
 
-    <mat-sidenav-content>
-        <h1>Test</h1>
+    <mat-sidenav-content class="content">
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>
