@@ -9,6 +9,11 @@
     min-height: 100vh;
 }
 
+.background-cream {
+    background-color: #E5DCBF;
+    min-height: 100vh;
+}
+
 .title {
     color: white !important;
     line-height: normal;
@@ -62,4 +67,15 @@
 
 #egg {
     max-width: 90vw;
+}
+
+#farm {
+    max-width: 90vw;
+    max-height: 30vw;
+}
+
+.mobile-farm {
+    max-width: 200vw !important;
+    max-height: 50vw !important;
+    height: 50vw;
 }

@@ -7,6 +7,7 @@ import { LandingComponent } from './landing.component';
 import { FirstPageComponent } from './first-page/first-page.component';
 import {MaterialModule} from '../shared/material/material.module';
 import { SecondPageComponent } from './second-page/second-page.component';
+import { ThirdPageComponent } from './third-page/third-page.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { SecondPageComponent } from './second-page/second-page.component';
   declarations: [
     LandingComponent,
     FirstPageComponent,
-    SecondPageComponent
+    SecondPageComponent,
+    ThirdPageComponent
   ]
 })
 export class LandingModule { }
