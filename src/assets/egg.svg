@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="497" height="644" viewBox="0 0 497 644">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #f7f26f;
+      }
+    </style>
+  </defs>
+  <g id="Egg" transform="translate(-1080 -218)">
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="248.5" cy="322" rx="248.5" ry="322" transform="translate(1080 218)"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-2" cx="130" cy="130" r="130" transform="translate(1198 427)"/>
+  </g>
+</svg>
