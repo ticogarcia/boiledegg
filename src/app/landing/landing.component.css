@@ -79,3 +79,14 @@
     max-height: 50vw !important;
     height: 50vw;
 }
+
+#pan {
+    max-width: 90vw;
+    max-height: 30vw;
+}
+
+.mobile-pan {
+    max-width: 200vw !important;
+    max-height: 50vw !important;
+    height: 50vw;
+}
