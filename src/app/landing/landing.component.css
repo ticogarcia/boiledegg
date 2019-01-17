@@ -90,3 +90,31 @@
     max-height: 50vw !important;
     height: 50vw;
 }
+
+.egg {
+    position: absolute;
+    top: 20%;
+    width: 20vh;
+    height: 25vh;
+    border-radius: 50%;
+    background-color: #FBD671;
+}
+
+.bottom-50 {
+    position: absolute;
+    bottom: 80%;
+}
+
+.egg-desktop {
+    position: absolute;
+    bottom: 50%;
+    width: 20vh;
+    height: 25vh;
+    border-radius: 50%;
+    background-color: #FBD671;
+}
+
+.bottom-50-desktop {
+    position: absolute;
+    bottom: 30%;
+}

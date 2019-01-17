@@ -2,11 +2,11 @@
 <div class="background-blue">
   <mat-grid-list cols="4" rowHeight="25vh">
     <mat-grid-tile [colspan]="colspan" [rowspan]="rowspan">
-      <h1 class="title-2 center" [class.title-3]="isMobile" [class.pb3]="!isMobile" [class.pl4]="!isMobile" >Ready To Join?</h1>
-      <h3 class="subtitle center" [class.subtitle-1]="isMobile" [class.pb3]="!isMobile" [class.pl4]="!isMobile" >Tap the Egg</h3>
+      <h1 class="title-2 center block" [class.title-3]="isMobile" [class.pb3]="!isMobile" [class.pl4]="!isMobile" >Ready To Join?</h1>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="colspan" [rowspan]="rowspan" >
-      <img src="assets/pan.svg" alt="Farm Vector Art" id="pan" [class.mobile-pan]="isMobile">
+      <h1 class="subtitle center block bottom-50" [class.subtitle-1]="isMobile" [class.bottom-50-desktop]="!isMobile" >Tap the Egg</h1>
+      <div [class.egg]="isMobile" [class.egg-desktop]="!isMobile"></div>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
