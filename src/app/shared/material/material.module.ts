@@ -12,24 +12,11 @@ import {
     MatGridListModule,
     MatDividerModule,
     MatStepperModule,
-    MatFormField
+    MatFormFieldModule
 } from '@angular/material';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
-    imports: [
-        MatRippleModule,
-        MatSidenavModule,
-        MatListModule,
-        MatCardModule,
-        MatToolbarModule,
-        MatIconModule,
-        MatButtonModule,
-        MatGridListModule,
-        MatDividerModule,
-        MatStepperModule,
-        MatFormField
-    ],
-    declarations: [],
     exports: [
         MatSidenavModule,
         MatIcon,
@@ -43,7 +30,9 @@ import {
         MatGridListModule,
         MatDividerModule,
         MatStepperModule,
-        MatFormField
+        MatFormFieldModule,
+        ReactiveFormsModule,
+        FormsModule
     ]
 })
 export class MaterialModule {
