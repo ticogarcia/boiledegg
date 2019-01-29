@@ -1,44 +1,58 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 import {
-  MatIcon,
-  MatButton,
-  MatRippleModule,
-  MatSidenavModule,
-  MatListModule,
-  MatCardModule,
-  MatToolbarModule,
-  MatIconModule,
-  MatButtonModule,
-  MatGridListModule,
-  MatDividerModule
-  } from '@angular/material';
-
-@NgModule({
-  imports: [
-    MatRippleModule,
-    MatSidenavModule,
-    MatListModule,
-    MatCardModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatGridListModule,
-    MatDividerModule
-  ],
-  declarations: [
-    ],
-  exports: [
-    MatSidenavModule,
     MatIcon,
     MatButton,
     MatRippleModule,
+    MatSidenavModule,
     MatListModule,
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
     MatGridListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatStepperModule,
+    MatFormFieldModule, MatInputModule
+} from '@angular/material';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
+@NgModule({
+    imports: [
+        MatIconModule,
+        MatButtonModule,
+        MatRippleModule,
+        MatSidenavModule,
+        MatListModule,
+        MatCardModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        MatGridListModule,
+        MatDividerModule,
+        MatStepperModule,
+        MatFormFieldModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MatInputModule
+    ],
+    exports: [
+        MatSidenavModule,
+        MatIcon,
+        MatButton,
+        MatRippleModule,
+        MatListModule,
+        MatCardModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        MatGridListModule,
+        MatDividerModule,
+        MatStepperModule,
+        MatFormFieldModule,
+        ReactiveFormsModule,
+        FormsModule,
+        MatInputModule
     ]
 })
-export class MaterialModule { }
+export class MaterialModule {
+}
