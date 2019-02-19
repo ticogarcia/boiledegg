@@ -1,6 +1,6 @@
 # BoiledEgg
 
-[![Build Status](https://travis-ci.com/caelinsutch/boiledegg.svg?branch=development)](https://travis-ci.com/caelinsutch/boiledegg)
+[![Build Status](https://travis-ci.com/caelinsutch/boiledegg.svg?branch=development)](https://travis-ci.com/caelinsutch/boiledegg) [![Join the chat at https://gitter.im/boiledeggwebsite/community](https://badges.gitter.im/boiledeggwebsite/community.svg)](https://gitter.im/boiledeggwebsite/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. Now on version 7
 
