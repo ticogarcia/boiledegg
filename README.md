@@ -1,6 +1,8 @@
 # BoiledEgg
 
 [![Build Status](https://travis-ci.com/caelinsutch/boiledegg.svg?branch=development)](https://travis-ci.com/caelinsutch/boiledegg)
+[![BCH compliance](https://bettercodehub.com/edge/badge/caelinsutch/boiledegg?branch=master)](https://bettercodehub.com/)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. Now on version 7
 
