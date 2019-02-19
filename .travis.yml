@@ -19,18 +19,12 @@ install:
   - cd src
   - npm i
 
-branches:
-  only:
-    - master
-    - release
-    - development
-
 before_script:
   - npm install -g @angular/cli
 
 script:
-  # - ng test --watch false -cc
-#  - npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
+  - ng test --watch false -cc
+  - npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
   - ng build --prod --base-href https://JHSRobo.github.io/copilot-page/
 
 # deploy:
