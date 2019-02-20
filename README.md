@@ -2,6 +2,16 @@
 
 [![Build Status](https://travis-ci.com/caelinsutch/boiledegg.svg?branch=master)](https://travis-ci.com/caelinsutch/boiledegg) [![Coverage Status](https://coveralls.io/repos/github/caelinsutch/boiledegg/badge.svg?branch=master)](https://coveralls.io/github/caelinsutch/boiledegg?branch=master) [![BCH compliance](https://bettercodehub.com/edge/badge/caelinsutch/boiledegg?branch=master)](https://bettercodehub.com/) [![Known Vulnerabilities](https://snyk.io/test/github/caelinsutch/boiledegg/badge.svg?targetFile=package.json)](https://snyk.io/test/github/caelinsutch/boiledegg?targetFile=package.json) [![Open Source Helpers](https://www.codetriage.com/caelinsutch/boiledegg/badges/users.svg)](https://www.codetriage.com/caelinsutch/boiledegg) [![Join the chat at https://gitter.im/boiledeggwebsite/community](https://badges.gitter.im/boiledeggwebsite/community.svg)](https://gitter.im/boiledeggwebsite/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+## About this Project
+
+Have you ever wanted a website with soleley egg recipes. Nothing but pages and pages of beautiful ways to prepare your eggs. Whether your preference is boiled, scrambled, fried, or pickled, this website is dedicated to bringing you different ways to prepare your favorite food.
+
+## Getting Started with Development
+
+This project is built of of [Angular 7](https://angular.io/), a web development framework built by google. We use [Angular Material](https://material.angular.io/) for front end components, and [Google Firebase](https://firebase.google.com/) for authentication and database. Interested in contributing? Fork this repository or send me a message on gitter to start working. 
+
+For more information about getting started with development, reference the wiki. 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
