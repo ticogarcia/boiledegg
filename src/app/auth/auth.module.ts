@@ -6,10 +6,12 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { SignupComponent } from './signup/signup.component';
 import {MaterialModule} from '../shared/material/material.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { SignupOptionsComponent } from './signup-options/signup-options.component';
 
 @NgModule({
   declarations: [
-      SignupComponent
+      SignupComponent,
+      SignupOptionsComponent
   ],
   imports: [
       CommonModule,

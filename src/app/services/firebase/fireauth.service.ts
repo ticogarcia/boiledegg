@@ -43,7 +43,7 @@ export class FireauthService {
      * No metadata when using valueChanges, snapshotChanges() returns metadata
      */
     this.user = this.afAuth.authState.pipe(
-      switchMap(user => {
+      switchMap(user => { // Switch map is essentially an if statement to switch tho a new observable
         if (user) {
           // Wrapper for [Document Reference Type](https://firebase.google.com/docs/reference/js/firebase.firestore.DocumentReference)
           // Refers to Document Location in firebase for path
