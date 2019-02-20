@@ -68,9 +68,63 @@ export class FireauthService {
       });
   }
 
+  /**
+   * Google login
+   * @returns Google auth provider
+   */
   googleLogin() {
     const provider = new auth.GoogleAuthProvider();
     return this.oAuthLogin(provider);
+  }
+
+  /**
+   * Creates new user with email and password. Returns error code and updates user credentials.
+   * @param email
+   * @param password
+   * @returns [error code](https://firebase.google.com/docs/reference/js/firebase.auth.Auth#createUserWithEmailAndPassword)
+   */
+  createUserEmailPassword(email: string, password: string) {
+    this.afAuth.auth.createUserWithEmailAndPassword(email, password)
+      .catch((error) => {
+        const errorCode = error.code;
+        console.log(error);
+        if (errorCode) {
+          return errorCode;
+        } else {
+          return error;
+        }
+      })
+      .then((credential) => {
+        this.updateUserData(credential.user)
+          .then((status) => {
+            console.log(status);
+          });
+      });
+  }
+
+  /**
+   * User sign-in with email and password. Returns error code and updates user credentials.
+   * @param email
+   * @param password
+   * @returns [error code](https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signInWithEmailAndPassword)
+   */
+  signInWithEmailPassword(email: string, password: string) {
+    this.afAuth.auth.signInWithEmailAndPassword(email, password)
+      .catch((error) => {
+        const errorCode = error.code;
+        console.log(error);
+        if (errorCode) {
+          return errorCode;
+        } else {
+          return error;
+        }
+      })
+      .then((credential) => {
+        this.updateUserData(credential.user)
+          .then((status) => {
+            console.log(status);
+          });
+      });
   }
 
   /**
