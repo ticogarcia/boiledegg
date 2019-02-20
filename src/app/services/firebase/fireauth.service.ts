@@ -21,8 +21,7 @@ interface User {
 }
 
 /**
- * Fire authentication service for authentication via Firebase using google oAuth
- * TODO Add Email Support
+ * Fire authentication service for authentication via Firebase using google and email
  */
 
 @Injectable({ providedIn: 'root' })
