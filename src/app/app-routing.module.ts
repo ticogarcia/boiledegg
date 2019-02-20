@@ -1,15 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PageNotFoundComponent } from './shared/error/page-not-found/page-not-found.component';
 
 const routes: Routes = [
+  {
+    path: 'landing',
+    loadChildren: './landing/landing.module#LandingModule'
+  },
   {
     path: 'home',
     loadChildren: './home/home.module#HomeModule'
   },
   {
+    path: 'auth',
+    loadChildren: './auth/auth.module#AuthModule'
+  },
+  {
     path: '',
-    redirectTo: '',
+    redirectTo: 'landing',
     pathMatch: 'full'
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 

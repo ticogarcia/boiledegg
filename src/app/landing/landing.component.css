@@ -1,0 +1,92 @@
+
+.background-red {
+    background-color: indianred;
+    min-height: 100vh;
+}
+
+.background-blue {
+    background-color: deepskyblue;
+    min-height: 100vh;
+}
+
+.background-cream {
+    background-color: #E5DCBF;
+    min-height: 100vh;
+}
+
+.title {
+    color: white !important;
+    line-height: normal;
+    max-width: 90vw;
+    display: block;
+
+    font-size: 800% !important;
+    font-weight: bold;
+}
+
+.title-2 {
+    color: white !important;
+    line-height: normal;
+    max-width: 90vw;
+    display: block;
+    font-size: 600% !important;
+    font-weight: bold;
+}
+
+.title-3 {
+    color: white !important;
+    line-height: normal;
+    max-width: 90vw;
+    display: block;
+
+    font-size: 300% !important;
+    font-weight: bold;
+}
+
+.subtitle {
+    display: block;
+    color: white !important;
+    line-height: normal;
+    max-width: 90vw;
+
+    font-size: 400% !important;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.subtitle-1 {
+    display: block;
+    color: white !important;
+    line-height: normal;
+    max-width: 90vw;
+
+    font-size: 400% !important;
+    font-style: italic;
+    font-weight: normal;
+}
+
+#egg {
+    max-width: 90vw;
+}
+
+#farm {
+    max-width: 90vw;
+    max-height: 30vw;
+}
+
+.mobile-farm {
+    max-width: 200vw !important;
+    max-height: 50vw !important;
+    height: 50vw;
+}
+
+#pan {
+    max-width: 90vw;
+    max-height: 30vw;
+}
+
+.mobile-pan {
+    max-width: 200vw !important;
+    max-height: 50vw !important;
+    height: 50vw;
+}

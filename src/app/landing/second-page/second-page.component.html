@@ -1,0 +1,14 @@
+
+<div class="background-red">
+  <mat-grid-list cols="4" rowHeight="25vh">
+    <mat-grid-tile [colspan]="colspan" [rowspan]="rowspan">
+      <h1 class="title" [class.title-2]="isMobile" [class.center]="isMobile" [class.pb3]="!isMobile" [class.pl4]="!isMobile" >WHAT'S <br> IN THE <br> EGG? </h1>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="colspan" [rowspan]="rowspan">
+      <div>
+        <p class="subtitle" [class.subtitle-1]="!isMobile" [class.pl4]="!isMobile">It's Simple:</p>
+        <p [class.title]="!isMobile" [class.title-3]="isMobile" [class.pb3]="!isMobile" [class.pl4]="!isMobile">COMPILATION <br> OF EGG <br> RECIPES</p>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
