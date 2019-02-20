@@ -1,6 +1,6 @@
 # BoiledEgg
 
-[![Build Status](https://travis-ci.com/caelinsutch/boiledegg.svg?branch=development)](https://travis-ci.com/caelinsutch/boiledegg)
+[![Build Status](https://travis-ci.com/caelinsutch/boiledegg.svg?branch=master)](https://travis-ci.com/caelinsutch/boiledegg) [![Coverage Status](https://coveralls.io/repos/github/caelinsutch/boiledegg/badge.svg?branch=master)](https://coveralls.io/github/caelinsutch/boiledegg?branch=master) [![BCH compliance](https://bettercodehub.com/edge/badge/caelinsutch/boiledegg?branch=master)](https://bettercodehub.com/) [![Known Vulnerabilities](https://snyk.io/test/github/caelinsutch/boiledegg/badge.svg?targetFile=package.json)](https://snyk.io/test/github/caelinsutch/boiledegg?targetFile=package.json) [![Join the chat at https://gitter.im/boiledeggwebsite/community](https://badges.gitter.im/boiledeggwebsite/community.svg)](https://gitter.im/boiledeggwebsite/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. Now on version 7
 
@@ -23,6 +23,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Build docs
+
+Run `npm run-script builddocs` to build docs using typedocs
 
 ## Further help
 
