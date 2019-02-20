@@ -9,7 +9,7 @@ import { MaterialModule } from './shared/material/material.module';
 import { PageNotFoundComponent } from './shared/error/page-not-found/page-not-found.component';
 
 import {AngularFireModule} from '@angular/fire';
-import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {AngularFirestoreModule, FirestoreSettingsToken} from '@angular/fire/firestore';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 
@@ -33,7 +33,7 @@ import {environment} from '../environments/environment';
   exports: [
     MaterialModule
   ],
-  providers: [],
+  providers: [{ provide: FirestoreSettingsToken, useValue: {} }], // Gets rid of old error
   bootstrap: [AppComponent]
 })
 export class AppModule { }
