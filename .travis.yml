@@ -31,4 +31,4 @@ script:
    github_token: $GITHUB_TOKEN
    local_dir: docs
    on:
-     branch: master
+     branch: development
