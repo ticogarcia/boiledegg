@@ -69,8 +69,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Fire authentication service for authentication via Firebase using google oAuth
-						TODO Add Email Support</p>
+						<p>Fire authentication service for authentication via Firebase using google and email</p>
 					</div>
 				</div>
 			</section>
@@ -104,8 +103,10 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fireauthservice.html#createuseremailpassword" class="tsd-kind-icon">create<wbr>User<wbr>Email<wbr>Password</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fireauthservice.html#googlelogin" class="tsd-kind-icon">google<wbr>Login</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="fireauthservice.html#oauthlogin" class="tsd-kind-icon">o<wbr>Auth<wbr>Login</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fireauthservice.html#signinwithemailpassword" class="tsd-kind-icon">sign<wbr>InWith<wbr>Email<wbr>Password</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fireauthservice.html#signout" class="tsd-kind-icon">sign<wbr>Out</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="fireauthservice.html#updateuserdata" class="tsd-kind-icon">update<wbr>User<wbr>Data</a></li>
 							</ul>
@@ -125,7 +126,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/14fbb60/src/app/services/firebase/fireauth.service.ts#L32">app/services/firebase/fireauth.service.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/4626868/src/app/services/firebase/fireauth.service.ts#L31">app/services/firebase/fireauth.service.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -153,7 +154,7 @@
 					<div class="tsd-signature tsd-kind-icon">af<wbr>Auth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AngularFireAuth</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/14fbb60/src/app/services/firebase/fireauth.service.ts#L36">app/services/firebase/fireauth.service.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/4626868/src/app/services/firebase/fireauth.service.ts#L35">app/services/firebase/fireauth.service.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -163,7 +164,7 @@
 					<div class="tsd-signature tsd-kind-icon">afs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AngularFirestore</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/14fbb60/src/app/services/firebase/fireauth.service.ts#L37">app/services/firebase/fireauth.service.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/4626868/src/app/services/firebase/fireauth.service.ts#L36">app/services/firebase/fireauth.service.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -173,7 +174,7 @@
 					<div class="tsd-signature tsd-kind-icon">router<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Router</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/14fbb60/src/app/services/firebase/fireauth.service.ts#L38">app/services/firebase/fireauth.service.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/4626868/src/app/services/firebase/fireauth.service.ts#L37">app/services/firebase/fireauth.service.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -183,13 +184,45 @@
 					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/14fbb60/src/app/services/firebase/fireauth.service.ts#L32">app/services/firebase/fireauth.service.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/4626868/src/app/services/firebase/fireauth.service.ts#L31">app/services/firebase/fireauth.service.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createuseremailpassword" class="tsd-anchor"></a>
+					<h3>create<wbr>User<wbr>Email<wbr>Password</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>User<wbr>Email<wbr>Password<span class="tsd-signature-symbol">(</span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/4626868/src/app/services/firebase/fireauth.service.ts#L86">app/services/firebase/fireauth.service.ts:86</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates new user with email and password. Returns error code and updates user credentials.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>email: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>password: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>(<a href="https://firebase.google.com/docs/reference/js/firebase.auth.Auth#createUserWithEmailAndPassword">https://firebase.google.com/docs/reference/js/firebase.auth.Auth#createUserWithEmailAndPassword</a>)</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="googlelogin" class="tsd-anchor"></a>
 					<h3>google<wbr>Login</h3>
@@ -200,10 +233,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/14fbb60/src/app/services/firebase/fireauth.service.ts#L72">app/services/firebase/fireauth.service.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/4626868/src/app/services/firebase/fireauth.service.ts#L75">app/services/firebase/fireauth.service.ts:75</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Google login</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Google auth provider</p>
 						</li>
 					</ul>
 				</section>
@@ -217,7 +256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/14fbb60/src/app/services/firebase/fireauth.service.ts#L65">app/services/firebase/fireauth.service.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/4626868/src/app/services/firebase/fireauth.service.ts#L64">app/services/firebase/fireauth.service.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -238,6 +277,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="signinwithemailpassword" class="tsd-anchor"></a>
+					<h3>sign<wbr>InWith<wbr>Email<wbr>Password</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">sign<wbr>InWith<wbr>Email<wbr>Password<span class="tsd-signature-symbol">(</span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/4626868/src/app/services/firebase/fireauth.service.ts#L111">app/services/firebase/fireauth.service.ts:111</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>User sign-in with email and password. Returns error code and updates user credentials.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>email: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>password: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>(<a href="https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signInWithEmailAndPassword">https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signInWithEmailAndPassword</a>)</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="signout" class="tsd-anchor"></a>
 					<h3>sign<wbr>Out</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -247,7 +318,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/14fbb60/src/app/services/firebase/fireauth.service.ts#L102">app/services/firebase/fireauth.service.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/4626868/src/app/services/firebase/fireauth.service.ts#L155">app/services/firebase/fireauth.service.ts:155</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -269,7 +340,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/14fbb60/src/app/services/firebase/fireauth.service.ts#L82">app/services/firebase/fireauth.service.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/caelinsutch/boiledegg/blob/4626868/src/app/services/firebase/fireauth.service.ts#L135">app/services/firebase/fireauth.service.ts:135</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,10 +413,16 @@
 								<a href="fireauthservice.html#user" class="tsd-kind-icon">user</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="fireauthservice.html#createuseremailpassword" class="tsd-kind-icon">create<wbr>User<wbr>Email<wbr>Password</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fireauthservice.html#googlelogin" class="tsd-kind-icon">google<wbr>Login</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="fireauthservice.html#oauthlogin" class="tsd-kind-icon">o<wbr>Auth<wbr>Login</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="fireauthservice.html#signinwithemailpassword" class="tsd-kind-icon">sign<wbr>InWith<wbr>Email<wbr>Password</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fireauthservice.html#signout" class="tsd-kind-icon">sign<wbr>Out</a>
@@ -395,6 +472,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="signupcomponent.html" class="tsd-kind-icon">Signup<wbr>Component</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="signupoptionscomponent.html" class="tsd-kind-icon">Signup<wbr>Options<wbr>Component</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="thirdpagecomponent.html" class="tsd-kind-icon">Third<wbr>Page<wbr>Component</a>

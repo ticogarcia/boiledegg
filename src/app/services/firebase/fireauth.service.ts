@@ -21,8 +21,7 @@ interface User {
 }
 
 /**
- * Fire authentication service for authentication via Firebase using google oAuth
- * TODO Add Email Support
+ * Fire authentication service for authentication via Firebase using google and email
  */
 
 @Injectable({ providedIn: 'root' })
@@ -44,7 +43,7 @@ export class FireauthService {
      * No metadata when using valueChanges, snapshotChanges() returns metadata
      */
     this.user = this.afAuth.authState.pipe(
-      switchMap(user => {
+      switchMap(user => { // Switch map is essentially an if statement to switch tho a new observable
         if (user) {
           // Wrapper for [Document Reference Type](https://firebase.google.com/docs/reference/js/firebase.firestore.DocumentReference)
           // Refers to Document Location in firebase for path
@@ -69,9 +68,63 @@ export class FireauthService {
       });
   }
 
+  /**
+   * Google login
+   * @returns Google auth provider
+   */
   googleLogin() {
     const provider = new auth.GoogleAuthProvider();
     return this.oAuthLogin(provider);
+  }
+
+  /**
+   * Creates new user with email and password. Returns error code and updates user credentials.
+   * @param email
+   * @param password
+   * @returns [error code](https://firebase.google.com/docs/reference/js/firebase.auth.Auth#createUserWithEmailAndPassword)
+   */
+  createUserEmailPassword(email: string, password: string) {
+    this.afAuth.auth.createUserWithEmailAndPassword(email, password)
+      .catch((error) => {
+        const errorCode = error.code;
+        console.log(error);
+        if (errorCode) {
+          return errorCode;
+        } else {
+          return error;
+        }
+      })
+      .then((credential) => {
+        this.updateUserData(credential.user)
+          .then((status) => {
+            console.log(status);
+          });
+      });
+  }
+
+  /**
+   * User sign-in with email and password. Returns error code and updates user credentials.
+   * @param email
+   * @param password
+   * @returns [error code](https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signInWithEmailAndPassword)
+   */
+  signInWithEmailPassword(email: string, password: string) {
+    this.afAuth.auth.signInWithEmailAndPassword(email, password)
+      .catch((error) => {
+        const errorCode = error.code;
+        console.log(error);
+        if (errorCode) {
+          return errorCode;
+        } else {
+          return error;
+        }
+      })
+      .then((credential) => {
+        this.updateUserData(credential.user)
+          .then((status) => {
+            console.log(status);
+          });
+      });
   }
 
   /**
