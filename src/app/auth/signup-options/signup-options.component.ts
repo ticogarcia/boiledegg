@@ -13,4 +13,16 @@ export class SignupOptionsComponent implements OnInit {
   ngOnInit() {
   }
 
+  signupWithGoogle() {
+    this._fireAuthService.googleLogin().catch((error) => {
+      console.log(error);
+    });
+  }
+
+  getUser() {
+    this._fireAuthService.user.subscribe((user) => {
+      console.log(user);
+    });
+  }
+
 }

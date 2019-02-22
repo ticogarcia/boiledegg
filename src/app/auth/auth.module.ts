@@ -19,7 +19,6 @@ import { SignupOptionsComponent } from './signup-options/signup-options.componen
       MaterialModule,
       FormsModule,
       FlexLayoutModule
-
   ]
 })
 export class AuthModule { }

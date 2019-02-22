@@ -56,23 +56,36 @@ export class FireauthService {
   }
 
   /**
-   * Provides a method for login using oAuth
+   * Provides a method for login using oAuth, used to pass in
    * Example, google login
    * @param provider
    * @returns Sign in with popup
    */
-  private oAuthLogin(provider) {
+  private  oAuthLogin(provider) {
     return this.afAuth.auth.signInWithPopup(provider)
-      .then((credential) => {
-        this.updateUserData(credential.user);
+      .then((result) => {
+        console.log(result);
+        // The signed in user info
+        const userReturned = result.user; // TODO figure out how to take this and append rest of login info
+        const userObject: User = {
+          uid: userReturned.uid,
+          email: userReturned.email,
+          firstName: userReturned.displayName.split(' ')[0],
+          lastName: userReturned.displayName.split(' ')[1],
+          phone: userReturned.phoneNumber,
+          userName: userReturned.displayName.split(' ').join(''),
+          photoURL: userReturned.photoURL,
+        };
+        this.updateUserData(userObject)
+          .then(null);
       });
   }
 
   /**
    * Google login
-   * @returns Google auth provider
+   * @returns Google popup provider
    */
-  googleLogin() {
+   googleLogin() {
     const provider = new auth.GoogleAuthProvider();
     return this.oAuthLogin(provider);
   }
@@ -136,14 +149,14 @@ export class FireauthService {
     // References user in Firestore
     const userRef: AngularFirestoreDocument<any> = this.afs.doc(`users/${user.uid}`);
 
-    const data: User = {
-      uid: user.uid,
-      email: user.email,
-      firstName: user.firstName,
-      lastName: user.lastName,
-      phone: user.phone,
-      userName: user.userName,
-      photoURL: user.photoURL
+    const data: User = { // TODO Refactor to make these optional
+      uid: user.uid ? user.uid : '',
+      email: user.email ? user.email : '',
+      firstName: user.firstName ? user.firstName : '',
+      lastName: user.lastName ? user.lastName : '',
+      phone: user.phone ? user.phone : 0,
+      userName: user.userName ? user.userName : '',
+      photoURL: user.photoURL ? user.photoURL : ''
     };
 
     return userRef.set(data, { merge: true });
@@ -152,9 +165,9 @@ export class FireauthService {
   /**
    * Signs out user and navigates to root
    */
-  signOut() {
+  signOut() { // TODO Refactor to a onAuthChanged method
     this.afAuth.auth.signOut().then(() => {
-      this.router.navigate(['/']);
+      this.router.navigate(['/']).then(null);
     });
   }
 }
