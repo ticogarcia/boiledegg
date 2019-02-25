@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators} from '@angular/forms';
-import {FireauthService} from "../../services/firebase/fireauth.service";
+import {FireauthService} from '../../services/firebase/fireauth.service';
+
+// TODO Fix Validator expected to return a promise error from email validation
 
 @Component({
   selector: 'app-signup',
@@ -10,7 +12,7 @@ import {FireauthService} from "../../services/firebase/fireauth.service";
 /**
  * Signup component handles user signup through email or google
  */
-export class SignupComponent implements OnInit{
+export class SignupComponent implements OnInit {
 
   generalInformation: FormGroup;
   contact: FormGroup;
@@ -44,6 +46,6 @@ export class SignupComponent implements OnInit{
    * Returns form object
    * @returns form object with errors and other info
    */
-  get form() { return this.generalInformation.controls}
+  get form() { return this.generalInformation.controls; }
 
 }
