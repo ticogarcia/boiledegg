@@ -8,12 +8,14 @@ import {MaterialModule} from '../shared/material/material.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { SignupOptionsComponent } from './signup-options/signup-options.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { EditComponent } from './user-profile/edit/edit.component';
 
 @NgModule({
   declarations: [
       SignupComponent,
       SignupOptionsComponent,
-      UserProfileComponent
+      UserProfileComponent,
+      EditComponent
   ],
   imports: [
       CommonModule,

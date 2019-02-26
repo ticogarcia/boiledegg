@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Edit Your Profile</mat-card-title>
+    <mat-card-subtitle *ngIf="currentUser">{{ currentUser.userName }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="pb2">
+      <mat-form-field hintLabel="What's your name?">
+        <input matInput placeholder="First Name" value="{{ currentUser.firstName }}">
+      </mat-form-field>
+      <mat-form-field hintLabel="What's your last name?">
+        <input matInput placeholder="Last Name" value="{{ currentUser.lastName}}">
+      </mat-form-field>
+    </div>
+    <div class="pt2">
+      <mat-form-field hintLabel="Display Name">
+        <input matInput placeholder="Username" value="{{ currentUser.userName}}">
+      </mat-form-field>
+    </div>
+
+  </mat-card-content>
+  <mat-card-actions align="start">
+    <!--<button mat-button (click)="onAction1">Action1</button>-->
+
+  </mat-card-actions>
+</mat-card>
