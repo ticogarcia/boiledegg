@@ -15,13 +15,13 @@ export class SignupOptionsComponent implements OnInit {
 
   signupWithGoogle() {
     this._fireAuthService.googleLogin().catch((error) => {
-      console.log(error);
+      console.log(error); // TODO Add actual error handling
     });
   }
 
   getUser() {
     this._fireAuthService.user.subscribe((user) => {
-      console.log(user);
+      console.log(user); // TODO Add actual error handling
     });
   }
 

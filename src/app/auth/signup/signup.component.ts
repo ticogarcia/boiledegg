@@ -27,7 +27,7 @@ export class SignupComponent implements OnInit {
    * Runs on initialization of component
    * Builds form with all of user input, refer to User interface.
    */
-  ngOnInit(): void {
+  ngOnInit(): void { // TODO Integrate into firebase
     this.generalInformation = this._formBuilder.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
