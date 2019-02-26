@@ -8,17 +8,7 @@ import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firest
 import { Observable, of } from 'rxjs';
 import { switchMap} from 'rxjs/operators';
 
-// User interface
-
-interface User {
-  uid: string;
-  email: string;
-  firstName: string;
-  lastName: string;
-  phone: string;
-  userName: string;
-  photoURL?: string;
-}
+import { User } from './user.interface';
 
 /**
  * Fire authentication service for authentication via Firebase using google and email

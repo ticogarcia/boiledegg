@@ -9,12 +9,15 @@
         <span>Boiled Egg</span>
     </button>
     <span class="spacer"></span>
-    <div>
-        <button
+    <!-- Displays only if User is logged in -->
+    <div *ngIf="currentUser">
+        <button mat-button class="display-1">
+            <span>{{ currentUser.userName }}</span>
+        </button>
     </div>
-    <button mat-button style="font-size: 2rem; padding: 0; min-width: 0;">
-        <i class="fab fa-instagram"></i>
-    </button>
+    <!--<button mat-button style="font-size: 2rem; padding: 0; min-width: 0;">-->
+        <!--<i class="fab fa-instagram"></i>-->
+    <!--</button>-->
 </mat-toolbar>
 <mat-sidenav-container class="mat-app-background">
     <mat-sidenav #sidenav mode="side">
