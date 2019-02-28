@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators} from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, NgForm} from '@angular/forms';
 import {FireauthService} from '../../services/firebase/fireauth.service';
 
 // TODO Fix Validator expected to return a promise error from email validation
@@ -17,7 +17,11 @@ export class SignupComponent implements OnInit {
   generalInformation: FormGroup;
   contact: FormGroup;
 
-  // Creates _formBuilder object
+  /**
+   * Initialized fireAuth service and form builder
+   * @param _formBuilder
+   * @param _fireAuthService
+   */
   constructor(
       private _formBuilder: FormBuilder,
       private _fireAuthService: FireauthService
@@ -28,6 +32,7 @@ export class SignupComponent implements OnInit {
    * Builds form with all of user input, refer to User interface.
    */
   ngOnInit(): void { // TODO Integrate into firebase
+    // TODO Move form builder into seperate service
     this.generalInformation = this._formBuilder.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
@@ -35,11 +40,12 @@ export class SignupComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(7)]]
     });
     this.contact = this._formBuilder.group({
-      email: ['', Validators.required, Validators.email]
+      email: ['', [Validators.required, Validators.email]]
     });
   }
 
   onSubmit() {
+    console.log(this.form);
   }
 
   /**

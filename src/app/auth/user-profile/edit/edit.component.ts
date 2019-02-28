@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import {FireauthService} from '../../../services/firebase/fireauth.service';
 import { User } from '../../../services/firebase/user.interface';
+import {SignupFormService} from '../../../services/forms/signup-form.service';
 
 /**
  * Webpage for users to edit their account information
@@ -23,7 +24,8 @@ export class EditComponent implements OnInit {
    * @param _fireAuthService
    */
   constructor(
-      private _fireAuthService: FireauthService
+      private _fireAuthService: FireauthService,
+      private _signupFormService: SignupFormService
   ) { }
 
   ngOnInit() {

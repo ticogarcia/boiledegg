@@ -82,12 +82,12 @@ export class FireauthService {
 
   /**
    * Creates new user with email and password. Returns error code and updates user credentials.
-   * @param email
+   * @param user
    * @param password
    * @returns [error code](https://firebase.google.com/docs/reference/js/firebase.auth.Auth#createUserWithEmailAndPassword)
    */
-  createUserEmailPassword(email: string, password: string) {
-    this.afAuth.auth.createUserWithEmailAndPassword(email, password)
+  createUserEmailPassword(user: User, password) {
+    this.afAuth.auth.createUserWithEmailAndPassword(user.email, password)
       .catch((error) => {
         const errorCode = error.code;
         console.log(error);

@@ -14,11 +14,13 @@ import {AngularFireStorageModule} from '@angular/fire/storage';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 
 import {environment} from '../environments/environment';
+import { UserFormComponent } from './shared/user-form/user-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
+    UserFormComponent,
   ],
   imports: [
     BrowserModule,
