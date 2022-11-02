@@ -1,4 +1,4 @@
-# The Boiled Egg
+# The Boiled Eggs
 
 [![Build Status](https://travis-ci.com/caelinsutch/boiledegg.svg?branch=master)](https://travis-ci.com/caelinsutch/boiledegg) [![Coverage Status](https://coveralls.io/repos/github/caelinsutch/boiledegg/badge.svg?branch=master)](https://coveralls.io/github/caelinsutch/boiledegg?branch=master) [![BCH compliance](https://bettercodehub.com/edge/badge/caelinsutch/boiledegg?branch=master)](https://bettercodehub.com/) [![Known Vulnerabilities](https://snyk.io/test/github/caelinsutch/boiledegg/badge.svg?targetFile=package.json)](https://snyk.io/test/github/caelinsutch/boiledegg?targetFile=package.json) [![Open Source Helpers](https://www.codetriage.com/caelinsutch/boiledegg/badges/users.svg)](https://www.codetriage.com/caelinsutch/boiledegg) [![Join the chat at https://gitter.im/boiledeggwebsite/community](https://badges.gitter.im/boiledeggwebsite/community.svg)](https://gitter.im/boiledeggwebsite/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
