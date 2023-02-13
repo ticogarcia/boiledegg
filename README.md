@@ -16,7 +16,9 @@ Have you ever wanted a website with soleley egg recipes. Nothing but pages and p
 
 ## Getting Started with Development
 
-This project is built of of [Angular 7](https://angular.io/), a web development framework built by google. We use [Angular Material](https://material.angular.io/) for front end components, and [Google Firebase](https://firebase.google.com/) for authentication and database. Interested in contributing? Fork this repository or send me a message on gitter to start working. 
+This project is built of of [Angular 7](https://angular.io/), a web development framework built by google. We use [Angular Material](https://material.angular.io/) for front end components, and [Google Firebase](https://firebase.google.com/) for authentication and database. Interested in contributing? Fork this repository or send me a message on gitter to start working.
+
+If you find a bug or have an idea for a feature, 
 
 To get started with development, you must first install all the necessary dependencies.
 To install all of them, run `npm install`.
